@@ -8,30 +8,29 @@ npm install --save express-req-to-file
 var reqToFile = require('express-req-to-file');
 
 //cgi path
-`app.use(reqToFile('/cgi/app'));`
-`app.use(reqToFile('/cgi/mobile'));`
+> app.use(reqToFile('/cgi/app'));
+> app.use(reqToFile('/cgi/mobile'));
 
 # your cgi file for example
-/cgi/app/test.js
+> /cgi/app/test.js
 
-`
-var doit = {};
 
-doit['all'] = function(req, res, next){
-  res.send('test : all');
-};
+> var doit = {};
 
-doit['get'] = function(req, res, next){
-  res.send('test: get');
-};
+> doit['all'] = function(req, res, next){
+>   res.send('test : all');
+> };
 
-doit['post'] = function(req, res, next){
-  res.send('test: post');
-};
+> doit['get'] = function(req, res, next){
+>   res.send('test: get');
+> };
 
-module.exports = function(req, res, next){
-  var method = req.method.toLowerCase();
-  method = doit[method] ? method : 'all';
-  doit[method](req, res, next);
-};
-`
+> doit['post'] = function(req, res, next){
+>   res.send('test: post');
+> };
+
+> module.exports = function(req, res, next){
+>   var method = req.method.toLowerCase();
+>   method = doit[method] ? method : 'all';
+>   doit[method](req, res, next);
+> };

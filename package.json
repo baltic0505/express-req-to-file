@@ -1,6 +1,6 @@
 {
   "name": "express-req-to-file",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "handdle request with given file, like .php",
   "main": "index.js",
   "scripts": {

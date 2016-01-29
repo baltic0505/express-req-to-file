@@ -1,0 +1,24 @@
+{
+  "name": "express-req-to-file",
+  "version": "0.0.2",
+  "description": "handdle request with given file, like .php",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baltic0505/express-req-to-file.git"
+  },
+  "keywords": [
+    "request-handdle",
+    "express-middleware",
+    "api"
+  ],
+  "author": "baltic0505",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baltic0505/express-req-to-file/issues"
+  },
+  "homepage": "https://github.com/baltic0505/express-req-to-file#readme"
+}
